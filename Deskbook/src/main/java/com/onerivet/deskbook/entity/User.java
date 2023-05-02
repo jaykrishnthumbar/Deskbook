@@ -34,11 +34,11 @@ public class User {
 	private String lastName;
 
 	@NotEmpty(message = "Enter the email...")
-	@Pattern(regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+(?:\\\\.[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\\\.[a-zA-Z0-9-]+)*$", message = "Enter email in valid format...(EX:Abc@123)")
+//	@Pattern(regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+(?:\\\\.[a-zA-Z0-9_!#$%&'*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\\\.[a-zA-Z0-9-]+)*$", message = "Enter email in valid format...(EX:Abc@123)")
 	private String email;
 
 	@NotEmpty(message = "Enter the password...")
-	@Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,20}$", message = "enter password in valid formate...(EX:Abc@gmail.com)")
+	@Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8,20}$", message = "enter password in valid formate...(EX:Abc@xyz123)")
 	private String password;
 
 	@NotEmpty(message = "Enter the mobile number...")
