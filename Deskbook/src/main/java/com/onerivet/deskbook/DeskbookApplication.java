@@ -1,13 +1,20 @@
-package com.onerivet.deskbook;
+package com.onerivet.DeskBook;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class DeskbookApplication {
+public class DeskBookApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DeskbookApplication.class, args);
+		SpringApplication.run(DeskBookApplication.class, args);
 	}
+	
+	@Bean
+	public ModelMapper modelMapper() {
+		return new ModelMapper();
+	} 
 
 }

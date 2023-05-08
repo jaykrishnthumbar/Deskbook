@@ -1,4 +1,4 @@
-package com.onerivet.deskbook.exception;
+package com.onerivet.DeskBook.exception;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -9,17 +9,17 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.onerivet.deskbook.entity.Response1;
+import com.onerivet.DeskBook.model.dtos.Responces;
 
 @RestControllerAdvice
-public class GlobalException extends RuntimeException{
+public class GlobalExceptionHandler extends RuntimeException{
 	
 	@ExceptionHandler(ResourceNotFound.class)
-	public Response1 resourceNotFoundHandler(ResourceNotFound exc) {
+	public Responces resourceNotFoundHandler(ResourceNotFound excp) {
 		
-		String message = exc.getMessage();
+		String message = excp.getMessage();
 		LocalDateTime now = LocalDateTime.now();
-		Response1 res = new Response1(message, now);
+		Responces res = new Responces(message, now);
 		return res;
 		
 	}
@@ -36,6 +36,7 @@ public class GlobalException extends RuntimeException{
 		return responce;
 		
 	}
+	
 	
 
 }

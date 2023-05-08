@@ -1,12 +1,11 @@
-package com.onerivet.deskbook.exception;
+package com.onerivet.DeskBook.exception;
 
-public class ResourceNotFound extends RuntimeException {
-
+public class ResourceNotFound extends RuntimeException{
+	
 	private String message;
-
-	public ResourceNotFound(String message) {
-		super(message);
-		// TODO Auto-generated constructor stub
+	
+	public ResourceNotFound (String message) {
+		super (message);
 	}
 
 }

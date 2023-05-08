@@ -1,4 +1,4 @@
-package com.onerivet.deskbook.entity;
+package com.onerivet.DeskBook.model.dtos;
 
 import java.time.LocalDateTime;
 
@@ -11,10 +11,9 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Response1 {
+public class Responces {
 	
 	private String message;
 	private LocalDateTime now;
-	
 
 }

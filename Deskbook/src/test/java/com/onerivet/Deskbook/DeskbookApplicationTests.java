@@ -1,10 +1,10 @@
-package com.onerivet.Deskbook;
+package com.onerivet.DeskBook;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DeskbookApplicationTests {
+class DeskBookApplicationTests {
 
 	@Test
 	void contextLoads() {
